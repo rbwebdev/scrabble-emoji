@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script async src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Romain Brasier">
+    <title>Scrabble string generator</title>
+</head>
+<body>
+<div class="container">
+    <br>
+    <div class="text-center">
+        <img src="letters/s.jpg" class="letter"/><img src="letters/c.jpg" class="letter"/><img src="letters/r.jpg" class="letter"/><img src="letters/a.jpg" class="letter"/><img src="letters/b.jpg" class="letter"/><img src="letters/b.jpg" class="letter"/><img src="letters/l.jpg" class="letter"/><img src="letters/e.jpg" class="letter"/><img src="letters/space.jpg" class="letter"/><img src="letters/e.jpg" class="letter"/><img src="letters/m.jpg" class="letter"/><img src="letters/o.jpg" class="letter"/><img src="letters/j.jpg" class="letter"/><img src="letters/i.jpg" class="letter"/><br>
+        <img src="letters/s.jpg" class="letter"/><img src="letters/t.jpg" class="letter"/><img src="letters/r.jpg" class="letter"/><img src="letters/i.jpg" class="letter"/><img src="letters/n.jpg" class="letter"/><img src="letters/g.jpg" class="letter"/><img src="letters/space.jpg" class="letter"/><img src="letters/g.jpg" class="letter"/><img src="letters/e.jpg" class="letter"/><img src="letters/n.jpg" class="letter"/><img src="letters/e.jpg" class="letter"/><img src="letters/r.jpg" class="letter"/><img src="letters/a.jpg" class="letter"/><img src="letters/t.jpg" class="letter"/><img src="letters/o.jpg" class="letter"/><img src="letters/r.jpg" class="letter"/>
+    </div>
+    <div class="row justify-content-lg-center justify-content-md-center">
+        <div class="col-lg-8 col-md-12">
+            <hr>
+            <form method="post" id="ga_troll_form">
+                <h4>Emoji patern:</h4>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <input id="before" type="text" name="before" class="form-control text-center" placeholder="before">
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input type="text" name="letter" class="form-control text-center" value="letter" readonly>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input id="after" type="text" name="after" class="form-control text-center" placeholder="after">
+                    </div>
+                </div>
+                <hr>
+                <h4>Text to convert:</h4>
+                <div class="form-group">
+                    <input id="text" type="text" name="string" class="form-control" style="width: 100%;" placeholder="text">
+                </div>
+                <hr>
+                <h4>Final string with emoji:</h4>
+                <textarea name="text-emoji" id="text-emoji" class="form-control" style="width: 100%; min-height: 100px;" readonly>
+                </textarea>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <button type="reset" id="copy" class="btn btn-success btn-block">Copy</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <button type="reset" id="reset" class="btn btn-warning btn-block">Reset</button>
+                    </div>
+                </div>
+                <hr>
+                <a href="letters/letters.zip" class="btn btn-dark btn-block">Download letters emoji pack</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
