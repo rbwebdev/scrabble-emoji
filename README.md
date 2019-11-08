@@ -26,3 +26,5 @@ Space are replace by `space`
 Accents are removed
 
 Characters that are not letters are replaced by `space`
+
+## [Let's try !](https://rbwebdev.github.io/scrabble-emoji/)
